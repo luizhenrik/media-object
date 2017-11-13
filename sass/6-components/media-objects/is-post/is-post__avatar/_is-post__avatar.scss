@@ -1,0 +1,16 @@
+.is-post__avatar {
+    &-small {
+        @extend %media-object__avatar,
+        %media-object__avatar-small;
+    }
+    &-large {
+        @extend %media-object__avatar,
+        %media-object__avatar-large;
+    }
+    &-image {
+        @extend %media-object__avatar-image;
+    }
+    &--rouded {
+        @extend %media-object__avatar--rouded;
+    }
+}

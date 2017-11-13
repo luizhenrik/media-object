@@ -1,0 +1,29 @@
+%media-object__main--levels {
+    flex: 0 1 100%;
+    width: 100%;
+    float: left;
+    padding-top: 16px;
+    &-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &-item {
+        float: left;
+        list-style: none;
+        margin-right: 10px;
+    }
+    &-item-right {
+        margin-left: auto;
+    }
+    &-link {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    &-icon {
+        margin-right: 3px;
+        font-size: 14px !important;
+    }
+}

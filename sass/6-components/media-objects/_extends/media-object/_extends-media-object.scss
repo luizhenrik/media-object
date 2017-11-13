@@ -1,0 +1,14 @@
+%media-object {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex: 0 1 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: baseline;
+    margin-bottom: 16px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

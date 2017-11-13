@@ -1,0 +1,14 @@
+.is-post--offset {
+    &-large {
+        @extend %media-object--offset-large;
+    }
+    &-small {
+        @extend %media-object--offset-small;
+    }
+    &-large-inner {
+        @extend %media-object--offset-large-inner;
+    }
+    &-small-inner {
+        @extend %media-object--offset-small-inner;
+    }
+}

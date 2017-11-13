@@ -1,0 +1,16 @@
+%is-comments__item {
+    width: 100%;
+    flex: 0 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &-message {
+        width: 100%;
+        flex: 0 1 100%;
+    }
+    &-answer {
+        width: 100%;
+        flex: 0 1 100%;
+        @extend %media-object--separator-before;
+        @extend %media-object--offset-small-inner;
+    }
+}

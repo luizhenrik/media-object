@@ -1,0 +1,26 @@
+%media-object--separator {
+    width: calc(100% - (#{object-get(media-object-basis, gutters)} * 2));
+    height: 1px;
+    flex: 0 1 100%;
+    display: flex;
+    border-bottom: object-get(media-object-basis, border-separator) solid #414141;
+    margin: 0 auto;
+    &-before {
+        &:last-child {
+            border-bottom: none;
+        }
+        &:before {
+            content: '';
+            @extend %media-object--separator;
+        }
+    }
+    &-after {
+        &:last-child {
+            border-bottom: none;
+        }
+        &:after {
+            content: '';
+            @extend %media-object--separator;
+        }
+    }
+}

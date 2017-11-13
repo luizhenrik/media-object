@@ -1,0 +1,8 @@
+.is-post__main {
+    background-color: #1E1E1E;
+    @extend %media-object__main;
+    &-text {
+        color: rgba(#FFF, 0.3);
+        @extend %media-object__main-text;
+    }
+}

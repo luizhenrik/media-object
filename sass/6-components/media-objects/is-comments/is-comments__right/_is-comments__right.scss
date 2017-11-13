@@ -1,0 +1,6 @@
+.is-comments__right {
+    @extend %media-object__right;
+    &-delete {
+        @extend %media-object__right-delete;
+    }
+}

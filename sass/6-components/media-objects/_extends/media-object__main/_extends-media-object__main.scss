@@ -1,0 +1,14 @@
+%media-object__main {
+    padding: object-get(media-object-basis, gutters-small) object-get(media-object-basis, gutters) object-get(media-object-basis, gutters);
+    flex: 0 1 100%;
+    width: 100%;
+    border-radius: 0 0 6px 6px;
+    font-size: object-get(media-object-basis, font-size);
+    @media screen and (max-width: object-get(breakpoints, md) - 1) {
+        padding: object-get(media-object-basis, gutters-medium) object-get(media-object-basis, gutters) object-get(media-object-basis, gutters) !important;
+    }
+    &-content {}
+    &-text {
+        font-style: italic;
+    }
+}

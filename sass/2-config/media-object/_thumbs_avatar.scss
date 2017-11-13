@@ -1,0 +1,2 @@
+$media-object__thumbs-avatar: ( large: 64px, small: 48px);
+@include object-set(media-object-avatar, $media-object__thumbs-avatar);

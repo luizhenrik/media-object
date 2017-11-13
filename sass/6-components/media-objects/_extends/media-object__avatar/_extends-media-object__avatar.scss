@@ -1,0 +1,30 @@
+%media-object__avatar {
+    flex: 0 0 auto;
+    float: left;
+    border: object-get(media-object-basis, border-thumb) solid rgba(#000, 0.5);
+    margin-right: object-get(media-object-basis, gutters-medium);
+    position: relative;
+    &-large {
+        width: object-get(media-object-avatar, large) + (object-get(media-object-basis, border-thumb) * 2);
+        height: object-get(media-object-avatar, large) + (object-get(media-object-basis, border-thumb) * 2);
+    }
+    &-small {
+        width: object-get(media-object-avatar, small) + (object-get(media-object-basis, border-thumb) * 2);
+        height: object-get(media-object-avatar, small) + (object-get(media-object-basis, border-thumb) * 2);
+    }
+    &-image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    &--rouded {
+        border-radius: 100%;
+        overflow: hidden;
+    }
+}

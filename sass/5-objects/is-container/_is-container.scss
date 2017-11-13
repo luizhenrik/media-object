@@ -1,0 +1,6 @@
+.is-container{
+    width: 100%;
+    max-width: object-get(breakpoints, lg);
+    display: block;
+    margin: 0 auto;
+}

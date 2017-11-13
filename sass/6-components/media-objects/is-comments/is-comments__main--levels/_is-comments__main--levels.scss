@@ -1,0 +1,18 @@
+.is-comments__main--levels {
+    @extend %media-object__main--levels;
+    &-list {
+        @extend %media-object__main--levels-list;
+    }
+    &-item {
+        @extend %media-object__main--levels-item;
+    }
+    &-item-right {
+        @extend %media-object__main--levels-item-right;
+    }
+    &-link {
+        @extend %media-object__main--levels-link;
+    }
+    &-icon {
+        @extend %media-object__main--levels-icon;
+    }
+}

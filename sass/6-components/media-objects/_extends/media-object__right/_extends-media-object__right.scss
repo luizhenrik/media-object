@@ -1,0 +1,28 @@
+%media-object__right {
+    flex: 0 0 auto;
+    width: auto;
+    float: left;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    &-delete {
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 6px;
+        align-self: baseline;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        min-width: 25px;
+        border-radius: 3px;
+        color: rgba(255, 255, 255, 0.35);
+        margin-top: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+        transition: All 0.15s ease-out;
+        &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    &-delete-icon {}
+}

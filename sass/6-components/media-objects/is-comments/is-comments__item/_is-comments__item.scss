@@ -1,0 +1,9 @@
+.is-comments__item {
+    @extend %is-comments__item;
+    &-message {
+        @extend %is-comments__item-message;
+    }
+    &-answer {
+        @extend %is-comments__item-answer;
+    }
+}

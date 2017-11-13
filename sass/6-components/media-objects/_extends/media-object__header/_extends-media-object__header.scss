@@ -1,0 +1,10 @@
+%media-object__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    align-items: center;
+    flex: 0 1 100%;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    padding: object-get(media-object-basis, gutters) object-get(media-object-basis, gutters) 0;
+}

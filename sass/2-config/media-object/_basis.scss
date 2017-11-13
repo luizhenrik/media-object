@@ -1,0 +1,10 @@
+$media-object-basis: (
+    gutters: 16px,
+    gutters-medium: 10px,
+    gutters-small: 6px,
+    border-thumb: 3px,
+    border-separator: 1px,
+    font-size: 14px
+);
+
+@include object-set(media-object-basis, $media-object-basis);

@@ -1,0 +1,14 @@
+.is-post__container {
+    @extend %media-object__container;
+    &-title {
+        @extend %media-object__container-title;
+    }
+    &-date {
+        color: rgba(#FFF, 0.15);
+        @extend %media-object__container-date;
+    }
+    &-status {
+        color: rgba(#FFF, 0.3);
+        @extend %media-object__container-status;
+    }
+}

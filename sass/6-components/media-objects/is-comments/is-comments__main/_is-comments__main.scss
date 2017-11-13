@@ -1,0 +1,7 @@
+.is-comments__main {
+    @extend %media-object__main;
+    &-text {
+        color: rgba(#FFF, 0.3);
+        @extend %media-object__main-text;
+    }
+}

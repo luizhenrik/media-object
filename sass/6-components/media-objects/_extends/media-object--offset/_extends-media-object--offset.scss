@@ -1,0 +1,27 @@
+%media-object--offset {
+    &-large {
+        padding-left: object-get(media-object-avatar, large) + (object-get(media-object-basis, border-thumb) * 2) + object-get(media-object-basis, gutters-medium) + object-get(media-object-basis, gutters);
+        @media screen and (max-width: object-get(breakpoints, md) - 1) {
+            padding-left: inherit;
+        }
+    }
+    &-large-inner {
+        padding-left: object-get(media-object-avatar, large) + (object-get(media-object-basis, border-thumb) * 2) + object-get(media-object-basis, gutters-medium);
+        @media screen and (max-width: object-get(breakpoints, md) - 1) {
+            padding-left: inherit;
+        }
+    }
+    &-small {
+        // width do thumb + soma das bordas ao redor H do thumb(3*2) + margin do thumb para o conteudo + padding esquerdo do parent
+        padding-left: object-get(media-object-avatar, small) + (object-get(media-object-basis, border-thumb) * 2) + object-get(media-object-basis, gutters-medium) + object-get(media-object-basis, gutters);
+        @media screen and (max-width: object-get(breakpoints, md) - 1) {
+            padding-left: inherit;
+        }
+    }
+    &-small-inner {
+        padding-left: object-get(media-object-avatar, small) + (object-get(media-object-basis, border-thumb) * 2) + object-get(media-object-basis, gutters-medium);
+        @media screen and (max-width: object-get(breakpoints, md) - 1) {
+            padding-left: 25px;
+        }
+    }
+}

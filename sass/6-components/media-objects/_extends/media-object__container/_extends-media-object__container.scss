@@ -1,0 +1,33 @@
+%media-object__container {
+    flex: 1 1 10em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &-title {
+        font-size: object-get(media-object-basis, font-size);
+        font-weight: 400;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 10em;
+    }
+    &-date {
+        margin-left: auto;
+        font-style: italic;
+        @media screen and (max-width: object-get(breakpoints, md) - 1) {
+            margin-left: 0;
+            display: block;
+            width: 100%;
+            flex: 0 1 100%;
+        }
+    }
+    &-status {
+        width: 100%;
+        flex: 0 1 100%;
+        font-size: object-get(media-object-basis, font-size);
+        font-style: italic;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

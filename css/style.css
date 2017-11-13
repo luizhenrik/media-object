@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+/* line 1, sass/3-generic/_all.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* line 9, sass/3-generic/_all.scss */
+body {
+  background-color: #171717;
+  color: #FFF;
+}
+
+/* line 1, sass/5-objects/is-container/_is-container.scss */
+.is-container {
+  width: 100%;
+  max-width: 990px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 1, sass/6-components/media-objects/_extends/is-comments__item/_is-comments__item.scss */
+.is-comments__item {
+  width: 100%;
+  flex: 0 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 6, sass/6-components/media-objects/_extends/is-comments__item/_is-comments__item.scss */
+.is-comments__item-message {
+  width: 100%;
+  flex: 0 1 100%;
+}
+
+/* line 10, sass/6-components/media-objects/_extends/is-comments__item/_is-comments__item.scss */
+.is-comments__item-answer {
+  width: 100%;
+  flex: 0 1 100%;
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object__avatar/_extends-media-object__avatar.scss */
+.is-comments__avatar-small, .is-comments__avatar-large, .is-post__avatar-small, .is-post__avatar-large {
+  flex: 0 0 auto;
+  float: left;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  position: relative;
+}
+
+/* line 7, sass/6-components/media-objects/_extends/media-object__avatar/_extends-media-object__avatar.scss */
+.is-comments__avatar-large, .is-post__avatar-large {
+  width: 70px;
+  height: 70px;
+}
+
+/* line 11, sass/6-components/media-objects/_extends/media-object__avatar/_extends-media-object__avatar.scss */
+.is-comments__avatar-small, .is-post__avatar-small {
+  width: 54px;
+  height: 54px;
+}
+
+/* line 15, sass/6-components/media-objects/_extends/media-object__avatar/_extends-media-object__avatar.scss */
+.is-comments__avatar-image, .is-post__avatar-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 26, sass/6-components/media-objects/_extends/media-object__avatar/_extends-media-object__avatar.scss */
+.is-comments__avatar--rouded, .is-post__avatar--rouded {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object__container/_extends-media-object__container.scss */
+.is-comments__container, .is-post__container {
+  flex: 1 1 10em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* line 6, sass/6-components/media-objects/_extends/media-object__container/_extends-media-object__container.scss */
+.is-comments__container-title, .is-post__container-title {
+  font-size: 14px;
+  font-weight: 400;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 10em;
+}
+
+/* line 14, sass/6-components/media-objects/_extends/media-object__container/_extends-media-object__container.scss */
+.is-comments__container-date, .is-post__container-date {
+  margin-left: auto;
+  font-style: italic;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 14, sass/6-components/media-objects/_extends/media-object__container/_extends-media-object__container.scss */
+  .is-comments__container-date, .is-post__container-date {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    flex: 0 1 100%;
+  }
+}
+
+/* line 24, sass/6-components/media-objects/_extends/media-object__container/_extends-media-object__container.scss */
+.is-comments__container-status, .is-post__container-status {
+  width: 100%;
+  flex: 0 1 100%;
+  font-size: 14px;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object__header/_extends-media-object__header.scss */
+.is-comments__header, .is-post__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
+  align-items: center;
+  flex: 0 1 100%;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  padding: 16px 16px 0;
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object__main--levels/_media-object__main--levels.scss */
+.is-comments__main--levels, .is-post__main--levels {
+  flex: 0 1 100%;
+  width: 100%;
+  float: left;
+  padding-top: 16px;
+}
+
+/* line 6, sass/6-components/media-objects/_extends/media-object__main--levels/_media-object__main--levels.scss */
+.is-comments__main--levels-list, .is-post__main--levels-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* line 12, sass/6-components/media-objects/_extends/media-object__main--levels/_media-object__main--levels.scss */
+.is-comments__main--levels-item, .is-post__main--levels-item {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
+
+/* line 17, sass/6-components/media-objects/_extends/media-object__main--levels/_media-object__main--levels.scss */
+.is-comments__main--levels-item-right, .is-post__main--levels-item-right {
+  margin-left: auto;
+}
+
+/* line 20, sass/6-components/media-objects/_extends/media-object__main--levels/_media-object__main--levels.scss */
+.is-comments__main--levels-link, .is-post__main--levels-link {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* line 25, sass/6-components/media-objects/_extends/media-object__main--levels/_media-object__main--levels.scss */
+.is-comments__main--levels-icon, .is-post__main--levels-icon {
+  margin-right: 3px;
+  font-size: 14px !important;
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object__main/_extends-media-object__main.scss */
+.is-comments__main, .is-post__main {
+  padding: 6px 16px 16px;
+  flex: 0 1 100%;
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 1, sass/6-components/media-objects/_extends/media-object__main/_extends-media-object__main.scss */
+  .is-comments__main, .is-post__main {
+    padding: 10px 16px 16px !important;
+  }
+}
+
+/* line 11, sass/6-components/media-objects/_extends/media-object__main/_extends-media-object__main.scss */
+.is-comments__main-text, .is-post__main-text {
+  font-style: italic;
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object__right/_extends-media-object__right.scss */
+.is-comments__right, .is-post__right {
+  flex: 0 0 auto;
+  width: auto;
+  float: left;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+/* line 8, sass/6-components/media-objects/_extends/media-object__right/_extends-media-object__right.scss */
+.is-comments__right-delete, .is-post__right-delete {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px;
+  align-self: baseline;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-width: 25px;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-top: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: All 0.15s ease-out;
+}
+
+/* line 22, sass/6-components/media-objects/_extends/media-object__right/_extends-media-object__right.scss */
+.is-comments__right-delete:hover, .is-post__right-delete:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 2, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+.is-comments--offset-large, .is-post--offset-large {
+  padding-left: 96px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 2, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+  .is-comments--offset-large, .is-post--offset-large {
+    padding-left: inherit;
+  }
+}
+
+/* line 8, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+.is-comments--offset-large-inner, .is-post--offset-large-inner {
+  padding-left: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 8, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+  .is-comments--offset-large-inner, .is-post--offset-large-inner {
+    padding-left: inherit;
+  }
+}
+
+/* line 14, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+.is-comments--offset-small, .is-post--offset-small {
+  padding-left: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 14, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+  .is-comments--offset-small, .is-post--offset-small {
+    padding-left: inherit;
+  }
+}
+
+/* line 21, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+.is-comments__item-answer, .is-comments--offset-small-inner, .is-post--offset-small-inner {
+  padding-left: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 21, sass/6-components/media-objects/_extends/media-object--offset/_extends-media-object--offset.scss */
+  .is-comments__item-answer, .is-comments--offset-small-inner, .is-post--offset-small-inner {
+    padding-left: 25px;
+  }
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object--separator/_extends-media-object--separator.scss */
+.is-comments__item-answer:before {
+  width: calc(100% - (16px * 2));
+  height: 1px;
+  flex: 0 1 100%;
+  display: flex;
+  border-bottom: 1px solid #414141;
+  margin: 0 auto;
+}
+
+/* line 9, sass/6-components/media-objects/_extends/media-object--separator/_extends-media-object--separator.scss */
+.is-comments__item-answer:last-child {
+  border-bottom: none;
+}
+
+/* line 12, sass/6-components/media-objects/_extends/media-object--separator/_extends-media-object--separator.scss */
+.is-comments__item-answer:before {
+  content: '';
+}
+
+/* line 1, sass/6-components/media-objects/_extends/media-object/_extends-media-object.scss */
+.is-comments, .is-post {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex: 0 1 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: baseline;
+  margin-bottom: 16px;
+}
+
+/* line 11, sass/6-components/media-objects/_extends/media-object/_extends-media-object.scss */
+.is-comments:last-child, .is-post:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1, sass/6-components/media-objects/is-comments/_is-comments.scss */
+.is-comments {
+  background-color: #161616;
+}
+
+/* line 6, sass/6-components/media-objects/is-comments/is-comments__container/_is-comments__container.scss */
+.is-comments__container-date {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* line 10, sass/6-components/media-objects/is-comments/is-comments__container/_is-comments__container.scss */
+.is-comments__container-status {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 3, sass/6-components/media-objects/is-comments/is-comments__main/_is-comments__main.scss */
+.is-comments__main-text {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 6, sass/6-components/media-objects/is-post/is-post__container/_is-post__container.scss */
+.is-post__container-date {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* line 10, sass/6-components/media-objects/is-post/is-post__container/_is-post__container.scss */
+.is-post__container-status {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 1, sass/6-components/media-objects/is-post/is-post__header/_is-post__header.scss */
+.is-post__header {
+  background-color: #1E1E1E;
+}
+
+/* line 1, sass/6-components/media-objects/is-post/is-post__main/_is-post__main.scss */
+.is-post__main {
+  background-color: #1E1E1E;
+}
+
+/* line 4, sass/6-components/media-objects/is-post/is-post__main/_is-post__main.scss */
+.is-post__main-text {
+  color: rgba(255, 255, 255, 0.3);
+}
